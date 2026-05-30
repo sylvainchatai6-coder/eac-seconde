@@ -3,6 +3,7 @@ package com.example
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.AndroidViewModel
+import com.example.ui.theme.ThemeStyle
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -16,6 +17,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _currentScreen = MutableStateFlow(Screen.DASHBOARD)
     val currentScreen: StateFlow<Screen> = _currentScreen.asStateFlow()
+
+    private val _isDarkTheme = MutableStateFlow(true)
+    val isDarkTheme: StateFlow<Boolean> = _isDarkTheme.asStateFlow()
+
+    private val _themeStyle = MutableStateFlow(ThemeStyle.GREEN)
+    val themeStyle: StateFlow<ThemeStyle> = _themeStyle.asStateFlow()
 
     // Loaded data
     private val _lessons = MutableStateFlow<List<Lesson>>(emptyList())
@@ -75,6 +82,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         val masteredString = prefs.getStringSet("mastered_flashcards", emptySet()) ?: emptySet()
         _masteredFlashcards.value = masteredString.mapNotNull { it.toIntOrNull() }.toSet()
 
+        val isDark = prefs.getBoolean("is_dark_theme", true)
+        _isDarkTheme.value = isDark
+
+        val styleStr = prefs.getString("theme_style", "GREEN") ?: "GREEN"
+        _themeStyle.value = try { ThemeStyle.valueOf(styleStr) } catch(e: Exception) { ThemeStyle.GREEN }
+
         val scoresMap = mutableMapOf<Int, Int>()
         for (i in 1..7) {
             val score = prefs.getInt("quiz_score_$i", -1)
@@ -100,6 +113,16 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun setLanguage(lang: AppLanguage) {
         _currentLanguage.value = lang
         loadLanguageData(lang)
+    }
+
+    fun setDarkTheme(isDark: Boolean) {
+        _isDarkTheme.value = isDark
+        prefs.edit().putBoolean("is_dark_theme", isDark).apply()
+    }
+
+    fun setThemeStyle(style: ThemeStyle) {
+        _themeStyle.value = style
+        prefs.edit().putString("theme_style", style.name).apply()
     }
 
     fun navigateTo(screen: Screen) {

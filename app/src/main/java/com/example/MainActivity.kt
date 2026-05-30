@@ -23,6 +23,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.automirrored.filled.*
 import androidx.compose.material3.*
 import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.runtime.*
@@ -41,14 +42,23 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.ui.theme.MyApplicationTheme
+import com.example.ui.theme.ThemeStyle
+import androidx.lifecycle.viewmodel.compose.viewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MyApplicationTheme {
-                MainAppScreen()
+            val mainViewModel: MainViewModel = viewModel()
+            val isDark by mainViewModel.isDarkTheme.collectAsState()
+            val style by mainViewModel.themeStyle.collectAsState()
+            
+            MyApplicationTheme(
+                darkTheme = isDark,
+                themeStyle = style
+            ) {
+                MainAppScreen(viewModel = mainViewModel)
             }
         }
     }
@@ -140,22 +150,18 @@ fun HeaderBar(
                 Box(
                     modifier = Modifier
                         .size(36.dp)
-                        .clip(CircleShape)
-                        .background(
-                            Brush.linearGradient(
-                                listOf(
-                                    MaterialTheme.colorScheme.primary,
-                                    MaterialTheme.colorScheme.tertiary
-                                )
-                            )
+                        .border(
+                            width = 1.5.dp,
+                            color = MaterialTheme.colorScheme.primary,
+                            shape = CircleShape
                         ),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(
-                        text = "EAC",
-                        color = Color.White,
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Bold
+                    Icon(
+                        imageVector = Icons.Default.Balance,
+                        contentDescription = "Education Logo",
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(20.dp)
                     )
                 }
                 Column {
@@ -234,35 +240,40 @@ fun BottomNavBar(
             selected = currentScreen == Screen.DASHBOARD,
             onClick = { onNavigate(Screen.DASHBOARD) },
             icon = { Icon(Icons.Default.Home, contentDescription = "Dashboard") },
-            label = { Text(UISerial.getLabel("dashboard_title", lang), fontSize = 10.sp, maxLines = 1) }
+            label = { Text(UISerial.getLabel("dashboard_title", lang), fontSize = 10.sp, maxLines = 1) },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             modifier = Modifier.testTag("nav_btn_lessons"),
             selected = currentScreen == Screen.LESSONS || currentScreen == Screen.LESSON_DETAIL,
             onClick = { onNavigate(Screen.LESSONS) },
-            icon = { Icon(Icons.Default.List, contentDescription = "Lessons") },
-            label = { Text(UISerial.getLabel("lessons", lang), fontSize = 10.sp, maxLines = 1) }
+            icon = { Icon(Icons.AutoMirrored.Filled.List, contentDescription = "Lessons") },
+            label = { Text(UISerial.getLabel("lessons", lang), fontSize = 10.sp, maxLines = 1) },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             modifier = Modifier.testTag("nav_btn_quiz"),
             selected = currentScreen == Screen.QUIZ,
             onClick = { onNavigate(Screen.QUIZ) },
             icon = { Icon(Icons.Default.Star, contentDescription = "Quizzes") },
-            label = { Text(UISerial.getLabel("quizzes", lang), fontSize = 10.sp, maxLines = 1) }
+            label = { Text(UISerial.getLabel("quizzes", lang), fontSize = 10.sp, maxLines = 1) },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             modifier = Modifier.testTag("nav_btn_flashcards"),
             selected = currentScreen == Screen.FLASHCARDS,
             onClick = { onNavigate(Screen.FLASHCARDS) },
             icon = { Icon(Icons.Default.Favorite, contentDescription = "Flashcards") },
-            label = { Text(UISerial.getLabel("flashcards", lang), fontSize = 10.sp, maxLines = 1) }
+            label = { Text(UISerial.getLabel("flashcards", lang), fontSize = 10.sp, maxLines = 1) },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             modifier = Modifier.testTag("nav_btn_about"),
             selected = currentScreen == Screen.ABOUT,
             onClick = { onNavigate(Screen.ABOUT) },
             icon = { Icon(Icons.Default.Info, contentDescription = "About") },
-            label = { Text(UISerial.getLabel("about", lang), fontSize = 10.sp, maxLines = 1) }
+            label = { Text(UISerial.getLabel("about", lang), fontSize = 10.sp, maxLines = 1) },
+            alwaysShowLabel = true
         )
     }
 }
@@ -314,9 +325,154 @@ fun DashboardScreen(
             }
         }
 
+        // Theme Customizer Card
+        Card(
+            modifier = Modifier.fillMaxWidth().testTag("theme_customizer_card"),
+            shape = RoundedCornerShape(16.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surfaceColorAtElevation(1.dp)
+            ),
+            border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f))
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = when (lang) {
+                                AppLanguage.FRENCH -> "Personnalisation du Thème"
+                                AppLanguage.ENGLISH -> "Theme Personalization"
+                                AppLanguage.MALAGASY -> "Sary sy Lokofahitra"
+                            },
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                        Text(
+                            text = when (lang) {
+                                AppLanguage.FRENCH -> "Choisis ton style présidentiel et ton mode"
+                                AppLanguage.ENGLISH -> "Choose your presidential style & theme mode"
+                                AppLanguage.MALAGASY -> "Safidio ny loko ofisialy tianao"
+                            },
+                            fontSize = 11.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    
+                    val isDark by viewModel.isDarkTheme.collectAsState()
+                    Button(
+                        onClick = { viewModel.setDarkTheme(!isDark) },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.secondaryContainer,
+                            contentColor = MaterialTheme.colorScheme.onSecondaryContainer
+                        ),
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp)
+                    ) {
+                        Text(
+                            text = if (isDark) {
+                                when (lang) {
+                                    AppLanguage.FRENCH -> "Sombre 🌙"
+                                    AppLanguage.ENGLISH -> "Dark 🌙"
+                                    AppLanguage.MALAGASY -> "Maizina 🌙"
+                                }
+                            } else {
+                                when (lang) {
+                                    AppLanguage.FRENCH -> "Clair ☀️"
+                                    AppLanguage.ENGLISH -> "Light ☀️"
+                                    AppLanguage.MALAGASY -> "Miharihary ☀️"
+                                }
+                            },
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+                
+                HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f))
+                
+                val activeStyle by viewModel.themeStyle.collectAsState()
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    ThemeStyle.entries.forEach { style ->
+                        val (styleLabel, styleColor) = when (style) {
+                            ThemeStyle.GREEN -> Pair(
+                                when (lang) {
+                                    AppLanguage.FRENCH -> "Vert (Orig)"
+                                    AppLanguage.ENGLISH -> "Green (Orig)"
+                                    AppLanguage.MALAGASY -> "Maintso"
+                                }, Color(0xFF006B54)
+                            )
+                            ThemeStyle.ORANGE -> Pair(
+                                when (lang) {
+                                    AppLanguage.FRENCH -> "Orange"
+                                    AppLanguage.ENGLISH -> "Orange"
+                                    AppLanguage.MALAGASY -> "Oranjy"
+                                }, Color(0xFF944A00)
+                            )
+                            ThemeStyle.BLUE -> Pair(
+                                when (lang) {
+                                    AppLanguage.FRENCH -> "Bleu"
+                                    AppLanguage.ENGLISH -> "Blue"
+                                    AppLanguage.MALAGASY -> "Manga"
+                                }, Color(0xFF005FAF)
+                            )
+                            ThemeStyle.VIOLET -> Pair(
+                                when (lang) {
+                                    AppLanguage.FRENCH -> "Violet (Orig)"
+                                    AppLanguage.ENGLISH -> "Violet (Orig)"
+                                    AppLanguage.MALAGASY -> "Volomparasy"
+                                }, Color(0xFF7949B8)
+                            )
+                        }
+                        
+                        val isSelected = style == activeStyle
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(4.dp),
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(8.dp))
+                                .clickable { viewModel.setThemeStyle(style) }
+                                .padding(horizontal = 8.dp, vertical = 6.dp)
+                        ) {
+                            Box(
+                                modifier = Modifier
+                                    .size(24.dp)
+                                    .clip(CircleShape)
+                                    .background(styleColor)
+                                    .border(
+                                        width = if (isSelected) 3.dp else 1.dp,
+                                        color = if (isSelected) MaterialTheme.colorScheme.onSurface else Color.Transparent,
+                                        shape = CircleShape
+                                    )
+                            )
+                            Text(
+                                text = styleLabel,
+                                fontSize = 11.sp,
+                                fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                color = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
         // Statistics Progress Panel
         Text(
-            text = "Statistiques de progression",
+            text = when (lang) {
+                AppLanguage.FRENCH -> "Statistiques de progression"
+                AppLanguage.ENGLISH -> "Progress Statistics"
+                AppLanguage.MALAGASY -> "Taham-pandrosoana ankapobeny"
+            },
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp,
             color = MaterialTheme.colorScheme.onBackground
@@ -392,7 +548,11 @@ fun DashboardScreen(
                     )
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
-                        text = "Quiz validés",
+                        text = when (lang) {
+                            AppLanguage.FRENCH -> "Quiz validés"
+                            AppLanguage.ENGLISH -> "Quizzes Passed"
+                            AppLanguage.MALAGASY -> "Quiz voavaly tsara"
+                        },
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Medium,
                         textAlign = TextAlign.Center
@@ -408,7 +568,7 @@ fun DashboardScreen(
                     )
                 }
             }
-
+ 
             // Flashcards progress
             Card(
                 modifier = Modifier
@@ -433,7 +593,7 @@ fun DashboardScreen(
                     )
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
-                        text = "Cartes maîtrisées",
+                        text = UISerial.getLabel("flashcards_rate", lang),
                         fontSize = 11.sp,
                         fontWeight = FontWeight.Medium,
                         textAlign = TextAlign.Center
@@ -529,7 +689,7 @@ fun DashboardScreen(
                                 )
                             } else {
                                 Icon(
-                                    Icons.Default.ArrowForward,
+                                    Icons.AutoMirrored.Filled.ArrowForward,
                                     contentDescription = "Read",
                                     tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
                                     modifier = Modifier.size(20.dp)
@@ -550,6 +710,23 @@ fun LessonsListScreen(
     completedLessons: Set<Int>
 ) {
     val lessons by viewModel.lessons.collectAsState()
+    var searchQuery by remember { mutableStateOf("") }
+
+    val filteredLessons = remember(lessons, searchQuery) {
+        if (searchQuery.isBlank()) {
+            lessons
+        } else {
+            lessons.filter { lesson ->
+                lesson.title.contains(searchQuery, ignoreCase = true) ||
+                lesson.section1Text.contains(searchQuery, ignoreCase = true) ||
+                lesson.section2Text.contains(searchQuery, ignoreCase = true) ||
+                lesson.section3Text.contains(searchQuery, ignoreCase = true) ||
+                lesson.section4Text.contains(searchQuery, ignoreCase = true) ||
+                lesson.section5Text.contains(searchQuery, ignoreCase = true) ||
+                lesson.mnemonic.contains(searchQuery, ignoreCase = true)
+            }
+        }
+    }
 
     Column(
         modifier = Modifier
@@ -569,11 +746,78 @@ fun LessonsListScreen(
             modifier = Modifier.padding(bottom = 16.dp)
         )
 
-        LazyColumn(
-            verticalArrangement = Arrangement.spacedBy(10.dp),
-            modifier = Modifier.weight(1f)
-        ) {
-            items(lessons, key = { it.id }) { lesson ->
+        // Interactive Search Bar
+        OutlinedTextField(
+            value = searchQuery,
+            onValueChange = { searchQuery = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 16.dp)
+                .testTag("lessons_search_field"),
+            placeholder = {
+                Text(
+                    text = when (lang) {
+                        AppLanguage.FRENCH -> "Rechercher une leçon..."
+                        AppLanguage.ENGLISH -> "Search a lesson..."
+                        AppLanguage.MALAGASY -> "Hitady lesona..."
+                    },
+                    fontSize = 14.sp
+                )
+            },
+            leadingIcon = {
+                Icon(
+                    imageVector = Icons.Default.Search,
+                    contentDescription = "Search icon"
+                )
+            },
+            trailingIcon = {
+                if (searchQuery.isNotEmpty()) {
+                    IconButton(onClick = { searchQuery = "" }) {
+                        Icon(
+                            imageVector = Icons.Default.Clear,
+                            contentDescription = "Clear search"
+                        )
+                    }
+                }
+            },
+            singleLine = true,
+            shape = RoundedCornerShape(12.dp),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = MaterialTheme.colorScheme.primary,
+                unfocusedBorderColor = MaterialTheme.colorScheme.outline
+            )
+        )
+
+        if (filteredLessons.isEmpty()) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(1f),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    Text("🔍", fontSize = 48.sp)
+                    Text(
+                        text = when (lang) {
+                            AppLanguage.FRENCH -> "Aucun résultat trouvé pour « $searchQuery »"
+                            AppLanguage.ENGLISH -> "No results found for \"$searchQuery\""
+                            AppLanguage.MALAGASY -> "Tsy nisy vokatra hita tamin \"%s\"".format(searchQuery)
+                        },
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        } else {
+            LazyColumn(
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+                modifier = Modifier.weight(1f)
+            ) {
+                items(filteredLessons, key = { it.id }) { lesson ->
                 val isCompleted = completedLessons.contains(lesson.id)
                 Card(
                     modifier = Modifier
@@ -655,6 +899,7 @@ fun LessonsListScreen(
         }
     }
 }
+}
 
 @Composable
 fun LessonDetailScreen(
@@ -683,7 +928,7 @@ fun LessonDetailScreen(
                     onClick = { viewModel.navigateTo(Screen.LESSONS) },
                     modifier = Modifier.testTag("lesson_back_button")
                 ) {
-                    Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                    Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
@@ -756,11 +1001,7 @@ fun LessonDetailScreen(
                             modifier = Modifier.padding(bottom = 8.dp)
                         )
                         HorizontalDivider(color = MaterialTheme.colorScheme.primary.copy(alpha = 0.2f), modifier = Modifier.padding(bottom = 8.dp))
-                        Text(
-                            text = l.section1Text,
-                            style = MaterialTheme.typography.bodyMedium,
-                            lineHeight = 20.sp
-                        )
+                        FormattedLessonText(text = l.section1Text)
                     }
                 }
 
@@ -884,27 +1125,236 @@ fun LessonDetailScreen(
 }
 
 @Composable
+fun FormattedLessonText(text: String) {
+    val lines = text.split("\n")
+    Column(
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        lines.forEach { line ->
+            val trimmed = line.trim()
+            if (trimmed.isEmpty()) return@forEach
+
+            when {
+                // List item with explicit numbering: e.g., "1. Key : Desc" or "1. Desc"
+                trimmed.firstOrNull()?.isDigit() == true && trimmed.contains(".") -> {
+                    val dotIdx = trimmed.indexOf(".")
+                    val numStr = trimmed.substring(0, dotIdx).trim()
+                    val restStr = trimmed.substring(dotIdx + 1).trim()
+                    val colonIdx = restStr.indexOf(":")
+                    Row(
+                        modifier = Modifier.fillMaxWidth().padding(start = 4.dp),
+                        horizontalArrangement = Arrangement.spacedBy(10.dp),
+                        verticalAlignment = Alignment.Top
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .padding(top = 2.dp)
+                                .size(22.dp)
+                                .clip(CircleShape)
+                                .background(MaterialTheme.colorScheme.primaryContainer),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = numStr,
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.onPrimaryContainer
+                            )
+                        }
+                        Column(modifier = Modifier.weight(1f)) {
+                            if (colonIdx != -1) {
+                                val boldPart = restStr.substring(0, colonIdx).trim()
+                                val lightPart = restStr.substring(colonIdx + 1).trim()
+                                Text(
+                                    text = boldPart,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 14.sp,
+                                    color = MaterialTheme.colorScheme.onSurface,
+                                    lineHeight = 20.sp
+                                )
+                                Spacer(modifier = Modifier.height(2.dp))
+                                Text(
+                                    text = lightPart,
+                                    fontSize = 13.sp,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    lineHeight = 18.sp
+                                )
+                            } else {
+                                Text(
+                                    text = restStr,
+                                    fontSize = 13.sp,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    lineHeight = 18.sp
+                                )
+                            }
+                        }
+                    }
+                }
+                // Bullet points: e.g. "- Citoyenneté civile : Description"
+                trimmed.startsWith("-") || trimmed.startsWith("•") || trimmed.startsWith("*") -> {
+                    val content = trimmed.substring(1).trim()
+                    val colonIdx = content.indexOf(":")
+                    Row(
+                        modifier = Modifier.fillMaxWidth().padding(start = 8.dp),
+                        horizontalArrangement = Arrangement.spacedBy(10.dp),
+                        verticalAlignment = Alignment.Top
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .padding(top = 6.dp)
+                                .size(6.dp)
+                                .clip(CircleShape)
+                                .background(MaterialTheme.colorScheme.secondary)
+                        )
+                        Column(modifier = Modifier.weight(1f)) {
+                            if (colonIdx != -1) {
+                                val boldPart = content.substring(0, colonIdx).trim()
+                                val lightPart = content.substring(colonIdx + 1).trim()
+                                Text(
+                                    text = boldPart,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 14.sp,
+                                    color = MaterialTheme.colorScheme.onSurface,
+                                    lineHeight = 20.sp
+                                )
+                                Spacer(modifier = Modifier.height(2.dp))
+                                Text(
+                                    text = lightPart,
+                                    fontSize = 13.sp,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    lineHeight = 18.sp
+                                )
+                            } else {
+                                Text(
+                                    text = content,
+                                    fontSize = 13.sp,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    lineHeight = 18.sp
+                                )
+                            }
+                        }
+                    }
+                }
+                // Important Warning, Piège or Definition containing a clear colon ": " style, but not starting with list markers
+                trimmed.contains(" : ") || trimmed.contains(" – ") -> {
+                    val sep = if (trimmed.contains(" : ")) " : " else " – "
+                    val parts = trimmed.split(sep, limit = 2)
+                    Card(
+                        modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                        shape = RoundedCornerShape(12.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = MaterialTheme.colorScheme.surfaceColorAtElevation(1.dp)
+                        ),
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.3f))
+                    ) {
+                        Column(modifier = Modifier.padding(12.dp)) {
+                            Row(
+                                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.Info,
+                                    contentDescription = "Definition",
+                                    tint = MaterialTheme.colorScheme.primary,
+                                    modifier = Modifier.size(16.dp)
+                                )
+                                Text(
+                                    text = parts[0].trim(),
+                                    fontWeight = FontWeight.ExtraBold,
+                                    color = MaterialTheme.colorScheme.primary,
+                                    fontSize = 13.sp
+                                )
+                            }
+                            Spacer(modifier = Modifier.height(6.dp))
+                            Text(
+                                text = parts[1].trim(),
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                fontSize = 13.sp,
+                                lineHeight = 18.sp
+                            )
+                        }
+                    }
+                }
+                // Normal paragraph
+                else -> {
+                    Text(
+                        text = trimmed,
+                        style = MaterialTheme.typography.bodyMedium,
+                        lineHeight = 21.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(vertical = 2.dp)
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
 fun SectionBlock(title: String, text: String) {
+    // Check if title has numbered prefix like "1. ", "1) ", "I. "
+    val numberRegex = "^\\s*([a-zA-Z0-9]+)[\\.\\)]\\s*(.*)$".toRegex()
+    val matchResult = numberRegex.find(title)
+    
+    val (displayNumber, displayTitle) = if (matchResult != null) {
+        Pair(matchResult.groupValues[1], matchResult.groupValues[2])
+    } else {
+        Pair(null, title)
+    }
+
     Card(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-        border = BorderStroke(width = 1.dp, color = MaterialTheme.colorScheme.outlineVariant)
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceColorAtElevation(1.dp)
+        ),
+        border = BorderStroke(
+            width = 1.dp,
+            color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f)
+        )
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
-            Text(
-                text = title,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onSurface,
-                modifier = Modifier.padding(bottom = 8.dp)
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                // Beautiful circular numeric or alphabetic badge
+                Box(
+                    modifier = Modifier
+                        .size(32.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.primaryContainer),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = displayNumber ?: "✦",
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
+                }
+
+                Text(
+                    text = displayTitle,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.ExtraBold,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    lineHeight = 22.sp,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+            
+            HorizontalDivider(
+                color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f),
+                thickness = 1.dp
             )
-            HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = text,
-                style = MaterialTheme.typography.bodyMedium,
-                lineHeight = 20.sp
-            )
+            
+            FormattedLessonText(text = text)
         }
     }
 }
@@ -991,7 +1441,7 @@ fun QuizScreen(
                                 )
                             }
                             Icon(
-                                Icons.Default.ArrowForward,
+                                Icons.AutoMirrored.Filled.ArrowForward,
                                 contentDescription = "Start Quiz",
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
                             )
@@ -1120,7 +1570,7 @@ fun QuizScreen(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     IconButton(onClick = { viewModel.resetQuizProgress() }) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "Quit")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Quit")
                     }
                     Column {
                         Text(
@@ -1538,7 +1988,7 @@ fun FlashcardsScreen(
                         enabled = currentIndex > 0,
                         modifier = Modifier.testTag("flashcard_prev_btn")
                     ) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "Previous")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Previous")
                     }
 
                     Text(
@@ -1558,7 +2008,7 @@ fun FlashcardsScreen(
                         enabled = currentIndex < filteredList.size - 1,
                         modifier = Modifier.testTag("flashcard_next_btn")
                     ) {
-                        Icon(Icons.Default.ArrowForward, contentDescription = "Next")
+                        Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = "Next")
                     }
                 }
             }
@@ -1918,6 +2368,72 @@ fun AboutScreen(
                     lineHeight = 20.sp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
+            }
+        }
+
+        // Author / Metadata Section
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 16.dp),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceColorAtElevation(2.dp)),
+            border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f))
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(6.dp)
+            ) {
+                Text(
+                    text = when (lang) {
+                        AppLanguage.FRENCH -> "APPLICATION OFFICIELLE"
+                        AppLanguage.ENGLISH -> "OFFICIAL APPLICATION"
+                        AppLanguage.MALAGASY -> "FAMPANDRANA OFISIALY"
+                    }.uppercase(),
+                    fontSize = 10.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.secondary,
+                    letterSpacing = 1.2.sp
+                )
+                Text(
+                    text = "Sylvain SOLOFONIAINA",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.primary
+                )
+                Text(
+                    text = when (lang) {
+                        AppLanguage.FRENCH -> "Éditeur & Concepteur National"
+                        AppLanguage.ENGLISH -> "National Designer & Editor"
+                        AppLanguage.MALAGASY -> "Mpanoratra sy Mpamorona"
+                    },
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    text = when (lang) {
+                        AppLanguage.FRENCH -> "Édition du 30 Mai 2026"
+                        AppLanguage.ENGLISH -> "Edition of May 30, 2026"
+                        AppLanguage.MALAGASY -> "Famoahana: 30 Mey 2026"
+                    },
+                    fontSize = 11.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Box(
+                    modifier = Modifier
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.primaryContainer)
+                        .padding(horizontal = 12.dp, vertical = 4.dp)
+                ) {
+                    Text(
+                        text = "Version 1.2.0-PRO",
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
+                }
             }
         }
     }
