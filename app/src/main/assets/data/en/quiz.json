@@ -1,0 +1,457 @@
+[
+  {
+    "lessonId": 1,
+    "id": 101,
+    "question": "What is citizenship?",
+    "options": [
+      "A) Simply having an identity card or passport",
+      "B) Being an active member of a political community with its rights and duties",
+      "C) Just living in a country without paying any taxes",
+      "D) Knowing the entire civil code by heart"
+    ],
+    "correctIndex": 1,
+    "explanation": "Citizenship encompasses active participation, civil and political rights, and corresponding duties within a state."
+  },
+  {
+    "lessonId": 1,
+    "id": 102,
+    "question": "What is the key difference between nationality and citizenship?",
+    "options": [
+      "A) Nationality costs money, citizenship is free",
+      "B) Nationality is a legal link to a state, whereas citizenship requires active civic participation",
+      "C) There is absolutely no difference between them",
+      "D) You cannot lose your nationality but lose your citizenship at 18"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nationality is the legal status from birth, while citizenship is the active exercise of democracy and civic duties."
+  },
+  {
+    "lessonId": 1,
+    "id": 103,
+    "question": "Which type of citizenship does voting belong to?",
+    "options": [
+      "A) Civil citizenship",
+      "B) Social citizenship",
+      "C) Political citizenship",
+      "D) Economic citizenship"
+    ],
+    "correctIndex": 2,
+    "explanation": "The right to vote and run for election is the pillar of political citizenship."
+  },
+  {
+    "lessonId": 1,
+    "id": 104,
+    "question": "What is the main goal of Citizenship Education (EAC)?",
+    "options": [
+      "A) To make you learn definitions to pass a dry test",
+      "B) To punish students for bad behavior in class",
+      "C) To prepare you to be a responsible adult, capable of understanding the world and acting for the common good",
+      "D) To only teach you how to sing the national anthem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Civic education grooms future generations to respect others and participate actively in democratic life."
+  },
+  {
+    "lessonId": 1,
+    "id": 105,
+    "question": "A newborn baby in Madagascar immediately has:",
+    "options": [
+      "A) Malagasy nationality, but not active citizenship yet",
+      "B) The right to vote and run for election",
+      "C) The obligation to pay income tax",
+      "D) Active citizenship without possessing a nationality"
+    ],
+    "correctIndex": 0,
+    "explanation": "Babies possess a legal state bond (nationality) at birth but will only practice active citizenship when they grow and gain maturity."
+  },
+  {
+    "lessonId": 2,
+    "id": 201,
+    "question": "Which of the following is a fundamental citizen right?",
+    "options": [
+      "A) The right to ride a motorcycle without a helmet",
+      "B) The right to free and compulsory education",
+      "C) The right to insult citizens in the streets",
+      "D) The right to skip municipal taxes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Access to primary education is one of the pillars of modern universal human rights."
+  },
+  {
+    "lessonId": 2,
+    "id": 202,
+    "question": "Paying taxes is considered:",
+    "options": [
+      "A) An optional donation from rich citizens",
+      "B) A punishment inflicted by the government",
+      "C) An essential civic duty used to fund public services like schools, roads, and hospitals",
+      "D) A volunteer gift without return"
+    ],
+    "correctIndex": 2,
+    "explanation": "Taxes represent the financial solidarity of citizens to maintain public structures, order, and prosperity."
+  },
+  {
+    "lessonId": 2,
+    "id": 203,
+    "question": "At what age do citizens usually get the right to vote?",
+    "options": [
+      "A) 14 years old",
+      "B) 16 years old",
+      "C) 18 years old",
+      "D) 21 years old"
+    ],
+    "correctIndex": 2,
+    "explanation": "In most countries, the age of majority and voting entitlement resides at 18."
+  },
+  {
+    "lessonId": 2,
+    "id": 204,
+    "question": "What is the individual responsibility of a citizen?",
+    "options": [
+      "A) Systematically blaming others for errors",
+      "B) Accepting the law blindly without constructive feedback",
+      "C) Maturely accepting the legal, moral, and social consequences of one's own actions",
+      "D) To act as judge and jury instead of official tribunals"
+    ],
+    "correctIndex": 2,
+    "explanation": "Assuming accountability for one's actions is the root of liberty and civic maturity."
+  },
+  {
+    "lessonId": 2,
+    "id": 205,
+    "question": "To remember the five rights of a citizen, which English acronym can you use?",
+    "options": [
+      "A) L.H.F.T.F.",
+      "B) L.L.E.W.V. (Life, Liberty, Education, Work, Vote)",
+      "C) U.D.H.R.",
+      "D) U.N."
+    ],
+    "correctIndex": 1,
+    "explanation": "L.L.E.W.V. helps memorize Life, Liberty, Education, Work, and Voting rights."
+  },
+  {
+    "lessonId": 3,
+    "id": 301,
+    "question": "In what year was the Universal Declaration of Human Rights adopted?",
+    "options": [
+      "A) 1918, after World War I",
+      "B) 1945, at the creation of the UN",
+      "C) December 10, 1948",
+      "D) 1989, at the fall of the Berlin Wall"
+    ],
+    "correctIndex": 2,
+    "explanation": "The UN General Assembly voted to adopt the UDHR on December 10, 1948."
+  },
+  {
+    "lessonId": 3,
+    "id": 302,
+    "question": "Which international organization drafted and voted on this text?",
+    "options": [
+      "A) The European Union (EU)",
+      "B) The United Nations (UN)",
+      "C) The African Union (AU)",
+      "D) UNICEF"
+    ],
+    "correctIndex": 1,
+    "explanation": "The United National (UN) is the global body that enacted the UDHR to keep peace and protect humans."
+  },
+  {
+    "lessonId": 3,
+    "id": 303,
+    "question": "Article 11 of the UDHR introduces a crucial judicial concept:",
+    "options": [
+      "A) The right to decent labor",
+      "B) The freedom of assembly",
+      "C) The presumption of innocence (innocent until proven guilty in a fair court)",
+      "D) Universal healthcare access"
+    ],
+    "correctIndex": 2,
+    "explanation": "The presumption of innocence prevents arbitrary arrests and protects the dignity of all accused persons."
+  },
+  {
+    "lessonId": 3,
+    "id": 304,
+    "question": "What major historical event directly led to the drafting of the UDHR?",
+    "options": [
+      "A) The French Revolution of 1789",
+      "B) The colonial partition of Africa",
+      "C) The mass atrocities and millions of deaths in World War II (1939-1945)",
+      "D) A worldwide earthquake"
+    ],
+    "correctIndex": 2,
+    "explanation": "The horrors and massive human loss of World War II pushed world leaders to establishing a baseline of moral rights."
+  },
+  {
+    "lessonId": 3,
+    "id": 305,
+    "question": "Every year, International Human Rights Day is celebrated on:",
+    "options": [
+      "A) January 1st",
+      "B) June 26th",
+      "C) December 10th",
+      "D) December 25th"
+    ],
+    "correctIndex": 2,
+    "explanation": "It marks the anniversary of the adoption of the UDHR on Dec 10, 1948."
+  },
+  {
+    "lessonId": 4,
+    "id": 401,
+    "question": "What is the term for unduly favoring your family for jobs or positions?",
+    "options": [
+      "A) Friendship favoritism",
+      "B) Nepotism",
+      "C) Direct bribery",
+      "D) Social volunteering"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nepotism is the abuse of power that advantages kin over qualified, competent candidates."
+  },
+  {
+    "lessonId": 4,
+    "id": 402,
+    "question": "What is a simple, clear definition of corruption?",
+    "options": [
+      "A) Working hard to increase your monthly income",
+      "B) Closing your eyes during a major accident",
+      "C) Using an official position or authority to get unfair personal benefit",
+      "D) Offering legal gifts to charity organizations"
+    ],
+    "correctIndex": 2,
+    "explanation": "Corruption diverts public service resources or actions to personal, private interests."
+  },
+  {
+    "lessonId": 4,
+    "id": 403,
+    "question": "Stealing public funds allocated for community projects (like building a school) is called:",
+    "options": [
+      "A) Mutual solidarity",
+      "B) Embezzlement",
+      "C) Organizational nepotism",
+      "D) Budget increase"
+    ],
+    "correctIndex": 1,
+    "explanation": "Embezzlement is the theft or misuse of money belonging to the community by someone in charge of managing it."
+  },
+  {
+    "lessonId": 4,
+    "id": 404,
+    "question": "What is a direct consequence of corruption?",
+    "options": [
+      "A) Fair wealth distribution among the poor",
+      "B) Drastic improvement of healthcare systems",
+      "C) Great social injustice, slow economic growth, and loss of public trust",
+      "D) Elections without fraud or cheating"
+    ],
+    "correctIndex": 2,
+    "explanation": "Corruption causes poverty, stops foreign investors from establishing businesses, and ruins democratic trust."
+  },
+  {
+    "lessonId": 4,
+    "id": 405,
+    "question": "Giving some money to an officer to avoid paying a normal 50,000 FCFA ticket is:",
+    "options": [
+      "A) Active citizen helper support",
+      "B) A friendly escape",
+      "C) Active and passive bribery punishable by law",
+      "D) Budget optimization"
+    ],
+    "correctIndex": 2,
+    "explanation": "Offering money to public servants to bypass official law is a bribery offense, heavily prosecuted in any state."
+  },
+  {
+    "lessonId": 5,
+    "id": 501,
+    "question": "What is the fundamental difference between sex and gender?",
+    "options": [
+      "A) Gender represents biology, sex represents choice of clothes",
+      "B) Sex is biological and fixed from birth, while gender designates social roles built by culture",
+      "C) Both words mean the same thing in law",
+      "D) The law forbids gender but supports sex"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sex is biological (male/female), whereas gender is the series of social stereotypes and roles attributed block-by-block by society."
+  },
+  {
+    "lessonId": 5,
+    "id": 502,
+    "question": "Refusing to employ a candidate because she might get married or have children is:",
+    "options": [
+      "A) A normal measure to protect household routines",
+      "B) Illegal discrimination punishable by courts of law",
+      "C) A caring act to reduce her professional schedule",
+      "D) Recommended by national laws"
+    ],
+    "correctIndex": 1,
+    "explanation": "Employment discrimination based on sex or maternity status is illegal and heavily fined."
+  },
+  {
+    "lessonId": 5,
+    "id": 503,
+    "question": "Insults, continuous harassment, and emotional degradation fall under:",
+    "options": [
+      "A) Physical violence",
+      "B) Sexual violence",
+      "C) Psychological and verbal violence",
+      "D) Economic violence"
+    ],
+    "correctIndex": 2,
+    "explanation": "Violence is more than physical blows. Ruining someone's self-esteem by insults and social isolation constitutes psychological abuse."
+  },
+  {
+    "lessonId": 5,
+    "id": 504,
+    "question": "The classic teaching says: 'Sex is to Nature what gender is to...'",
+    "options": [
+      "A) Mathematics",
+      "B) Nuclear physics",
+      "C) Culture (the social constructions of society)",
+      "D) Jungle wildlife"
+    ],
+    "correctIndex": 2,
+    "explanation": "Society and culture (gender) define what behaves or thinks as feminine or masculine, relative to the natural body (sex)."
+  },
+  {
+    "lessonId": 5,
+    "id": 505,
+    "question": "As a student, if you witness continuous abuse or violence, what should you do first?",
+    "options": [
+      "A) Record a video and post it on social media to build hype",
+      "B) Completely ignore it because it's not your business",
+      "C) Report it immediately to a trusted school adult (teacher, counselor, parent)",
+      "D) Start a fight with the abuser to teach them a lesson"
+    ],
+    "correctIndex": 2,
+    "explanation": "Speaking out and warning educators is the safest, most mature and helpful behavior."
+  },
+  {
+    "lessonId": 6,
+    "id": 601,
+    "question": "The golden rule of Sustainable Development states:",
+    "options": [
+      "A) Consume as much petroleum as you can immediately",
+      "B) Meet the needs of the present without compromising the ability of future generations to meet theirs",
+      "C) Halt all scientific development and return to primitive centuries",
+      "D) Exclusively finance coal plants"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sustainable development maintains a balance so we do not deplete the earth before handing it over to future generations."
+  },
+  {
+    "lessonId": 6,
+    "id": 602,
+    "question": "What are the 3 essential pillars that keep the sustainable pyramid standing?",
+    "options": [
+      "A) Agriculture, Tourism, heavy industry",
+      "B) The Economic, the Social (justice, schooling) and the Environmental (nature, climate)",
+      "C) Taxation, Courts of justice, National defense",
+      "D) Oil, Nuclear power, Coal"
+    ],
+    "correctIndex": 1,
+    "explanation": "We need stable economics that are socially inclusive and respect the ecological limits of the planet."
+  },
+  {
+    "lessonId": 6,
+    "id": 603,
+    "question": "How many Sustainable Development Goals (SDGs) were set by the UN for 2030?",
+    "options": [
+      "A) 5 main goals",
+      "B) 10 prioritary goals",
+      "C) 17 global interconnected goals",
+      "D) 50 state goals"
+    ],
+    "correctIndex": 2,
+    "explanation": "The UN established 17 wide-ranging goals to tackle poverty, pollution, oceans, clean water, and education."
+  },
+  {
+    "lessonId": 6,
+    "id": 604,
+    "question": "Which basic, daily gesture contributes positively to reducing our carbon footprint?",
+    "options": [
+      "A) Leaving the tap open while washing dishes",
+      "B) Turning off unused electric appliances and planting trees",
+      "C) Making intensive use of disposable plastic items",
+      "D) Burning plastic dump trash in the garden"
+    ],
+    "correctIndex": 1,
+    "explanation": "Saving electricity reduces carbon emissions, and trees absorb carbon dioxide actively."
+  },
+  {
+    "lessonId": 6,
+    "id": 605,
+    "question": "Why has environmental action become so critically urgent today?",
+    "options": [
+      "A) To make ecology political parties happy",
+      "B) Because the climate is changing dangerously and vital resources (like fresh water) are running dry",
+      "C) Because it lowers gas prices at pumps",
+      "D) Scientists believe that the environment always self-corrects without help"
+    ],
+    "correctIndex": 1,
+    "explanation": "Drying water tables, losing biodiversity, and volatile weather climates threaten human livelihood directly."
+  },
+  {
+    "lessonId": 7,
+    "id": 701,
+    "question": "What is volunteering?",
+    "options": [
+      "A) An obligatory internship paid by city hall",
+      "B) A lucrative, commercial trade job",
+      "C) Freely sharing your time and skills for a cause without any financial pay",
+      "D) A punishment decided by school board"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volunteering is driven by altruism, solidarity, and active civic duty without monetary motivation."
+  },
+  {
+    "lessonId": 7,
+    "id": 702,
+    "question": "Which of these actions is a direct mark of social solidarity?",
+    "options": [
+      "A) Watching a sports game with classmates",
+      "B) Gathering food donations for homeless shelters or donating blood",
+      "C) Buying expensive designer clothes",
+      "D) Returning homework on time"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gathering charity aid or donating blood serves to protect and support weaker or suffering community members."
+  },
+  {
+    "lessonId": 7,
+    "id": 703,
+    "question": "Active citizen participation on a local municipality level involves:",
+    "options": [
+      "A) Reporting broken streetlights or attending local debate assemblies",
+      "B) Writing funny reviews on the internet",
+      "C) Speeding inside school zones",
+      "D) Blocking neighbor's entryways"
+    ],
+    "correctIndex": 0,
+    "explanation": "Monitoring public spaces and informing town halls about issues represents active local citizenship."
+  },
+  {
+    "lessonId": 7,
+    "id": 704,
+    "question": "The mnemonic rule says: 'Solidarity = Heart', while citizen participation is:",
+    "options": [
+      "A) 'The thoughtful head'",
+      "B) 'The hungry stomach'",
+      "C) 'The active Hands of action'",
+      "D) 'The feet running away'"
+    ],
+    "correctIndex": 2,
+    "explanation": "Solidarity is the empathy (heart), while participation is physically putting your hands to work."
+  },
+  {
+    "lessonId": 7,
+    "id": 705,
+    "question": "What personal satisfaction do young people get from volunteering?",
+    "options": [
+      "A) Huge monetary payments",
+      "B) Getting exempted from passing exams",
+      "C) Pride of helping, genuine smiles of gratitude, and helpful experience",
+      "D) Special permissions to bypass minor traffic laws"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volunteering builds empathy, teaches and provides useful life lessons, and delivers great moral joy."
+  }
+]

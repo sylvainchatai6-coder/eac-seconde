@@ -1,0 +1,6 @@
+{
+  "name": "EAC Seconde - Citoyenneté",
+  "description": "Application web et mobile pédagogique sur la Citoyenneté et les Droits pour la classe de Seconde, supportant le Français, l'Anglais et le Malagasy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

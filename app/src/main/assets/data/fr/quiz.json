@@ -1,0 +1,457 @@
+[
+  {
+    "lessonId": 1,
+    "id": 101,
+    "question": "Qu'est-ce que la citoyenneté ?",
+    "options": [
+      "A) Avoir une simple carte d'identité ou un passeport",
+      "B) Être membre actif d'une communauté politique avec ses droits et ses devoirs",
+      "C) Vivre simplement dans un pays sans payer d'impôts",
+      "D) Connaître par cœur l'intégralité du code civil"
+    ],
+    "correctIndex": 1,
+    "explanation": "La citoyenneté englobe la participation active, les droits civils et politiques, ainsi que les devoirs correspondants au sein d'une collectivité."
+  },
+  {
+    "lessonId": 1,
+    "id": 102,
+    "question": "Quelle est la différence majeure entre nationalité et citoyenneté ?",
+    "options": [
+      "A) La nationalité est payante, la citoyenneté est gratuite",
+      "B) La nationalité est un lien juridique avec l'État, tandis que la citoyenneté implique une participation active",
+      "C) Il n'y a absolument aucune différence entre les deux",
+      "D) On ne peut pas perdre sa citoyenneté, alors qu'on perd sa nationalité à 18 ans"
+    ],
+    "correctIndex": 1,
+    "explanation": "La nationalité est un lien juridique avec l'État (comme un bébé à la naissance), alors que la citoyenneté exige d'utiliser ses droits et de faire ses devoirs de manière active."
+  },
+  {
+    "lessonId": 1,
+    "id": 103,
+    "question": "Quel type de citoyenneté concerne le fait d'aller voter ?",
+    "options": [
+      "A) La citoyenneté civile",
+      "B) La citoyenneté sociale",
+      "C) La citoyenneté politique",
+      "D) La citoyenneté économique"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le droit de vote et de se porter candidat relèvent directement de la citoyenneté politique."
+  },
+  {
+    "lessonId": 1,
+    "id": 104,
+    "question": "L'Éducation à la Citoyenneté (EAC) a pour but principal de :",
+    "options": [
+      "A) Te faire apprendre des définitions sèches pour réussir un examen",
+      "B) Te punir lorsque tu as un mauvais comportement en classe",
+      "C) Te préparer à devenir un adulte responsable, capable de comprendre le monde et d'agir pour le bien commun",
+      "D) t'apprendre uniquement à chanter l'hymne national"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'EAC éduque les futures générations à comprendre l'importance du respect, de l'action collective et du rôle d'un citoyen responsable."
+  },
+  {
+    "lessonId": 1,
+    "id": 105,
+    "question": "Un bébé né à Madagascar possède immédiatement :",
+    "options": [
+      "A) La nationalité malgache, mais pas encore la citoyenneté active",
+      "B) Le droit de vote et de se présenter aux élections",
+      "C) Le devoir de payer l'impôt sur le revenu",
+      "D) La citoyenneté active sans posséder la nationalité"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le bébé possède le lien juridique (la nationalité) à la naissance mais acquerra plus tard sa citoyenneté active avec l'âge et la responsabilité."
+  },
+  {
+    "lessonId": 2,
+    "id": 201,
+    "question": "Lequel des éléments suivants est un droit fondamental du citoyen ?",
+    "options": [
+      "A) Droit de rouler sans casque à moto",
+      "B) Droit à l'éducation gratuite et obligatoire",
+      "C) Droit d'insulter les passants dans la rue",
+      "D) Droit d'éviter de payer les taxes municipales"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'accès à l'éducation fait partie des droits fondamentaux d'un citoyen moderne."
+  },
+  {
+    "lessonId": 2,
+    "id": 202,
+    "question": "Payer ses impôts et taxes est considéré à juste titre comme :",
+    "options": [
+      "A) Un droit optionnel réservé aux personnes riches",
+      "B) Une punition infligée par le gouvernement",
+      "C) Un devoir citoyen essentiel servant à financer les services publics (écoles, routes, hôpitaux)",
+      "D) Un don bénévole sans contrepartie"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'impôt est une obligation démocratique de solidarité nationale pour financer les biens collectifs."
+  },
+  {
+    "lessonId": 2,
+    "id": 203,
+    "question": "A quel âge le droit de vote s'ouvre-t-il généralement aux citoyens ?",
+    "options": [
+      "A) À 14 ans",
+      "B) À 16 ans",
+      "C) À 18 ans",
+      "D) À 21 ans"
+    ],
+    "correctIndex": 2,
+    "explanation": "En devenant majeur à 18 ans, le citoyen obtient légalement le droit de vote actif et passif."
+  },
+  {
+    "lessonId": 2,
+    "id": 204,
+    "question": "Qu'est-ce que la responsabilité individuelle d'un citoyen ?",
+    "options": [
+      "A) Repousser systématiquement ses fautes sur autrui",
+      "B) Accepter consciemment de subir la loi sans jamais protester",
+      "C) Assumer de manière mûre les conséquences juridiques, morales et sociales de ses propres actes",
+      "D) Prendre des décisions de justice à la place des tribunaux"
+    ],
+    "correctIndex": 2,
+    "explanation": "Assumer ses actes est la base de la responsabilité d'un citoyen libre et autonome."
+  },
+  {
+    "lessonId": 2,
+    "id": 205,
+    "question": "Pour se souvenir des 5 droits du citoyen d'après le cours, quelle astuce mnémotechnique utilise-t-on ?",
+    "options": [
+      "A) L.H.F.T.F.",
+      "B) V.L.É.T.V. (Vie, Liberté, École, Travail, Vote)",
+      "C) D.U.D.H.",
+      "D) O.N.U."
+    ],
+    "correctIndex": 1,
+    "explanation": "V.L.É.T.V. permet de mémoriser instantanément : Vie, Liberté, École, Travail et Vote."
+  },
+  {
+    "lessonId": 3,
+    "id": 301,
+    "question": "En quelle année a été adoptée la Déclaration Universelle des Droits de l'Homme ?",
+    "options": [
+      "A) En 1918, après la Première Guerre mondiale",
+      "B) En 1945, lors de la création de l'ONU",
+      "C) Le 10 décembre 1948",
+      "D) En 1989, à la chute du mur de Berlin"
+    ],
+    "correctIndex": 2,
+    "explanation": "La DUDH a été formellement adoptée par l'Assemblée générale des Nations Unies le 10 décembre 1948."
+  },
+  {
+    "lessonId": 3,
+    "id": 302,
+    "question": "Quelle grande organisation mondiale a rédigé et voté ce texte ?",
+    "options": [
+      "A) L'Union Européenne (UE)",
+      "B) L'Organisation des Nations Unies (ONU)",
+      "C) L'Union Africaine (UA)",
+      "D) L'Unicef"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'ONU fut le cadre historique de ce pacte universel de protection des droits humains."
+  },
+  {
+    "lessonId": 3,
+    "id": 303,
+    "question": "L'Article 11 de la DUDH introduit un principe crucial de la justice :",
+    "options": [
+      "A) Le droit au travail décent",
+      "B) La liberté d'association",
+      "C) La présomption d'innocence (être innocent tant qu'un juste tribunal ne prouve pas le contraire)",
+      "D) L'accès gratuit aux soins de santé"
+    ],
+    "correctIndex": 2,
+    "explanation": "La présomption d'innocence évite les condamnations arbitraires ou les lynchages médiatiques."
+  },
+  {
+    "lessonId": 3,
+    "id": 304,
+    "question": "Quel événement historique majeur est à l'origine directe de la création de la DUDH ?",
+    "options": [
+      "A) La Révolution française de 1789",
+      "B) La colonisation de l'Afrique",
+      "C) Les atrocités et millions de morts de la Seconde Guerre mondiale (1939-1945)",
+      "D) Un tremblement de terre planétaire"
+    ],
+    "correctIndex": 2,
+    "explanation": "C'est l'horreur des massacres de masse de la Seconde Guerre mondiale qui a motivé les dirigeants mondiaux à imposer des limites éthiques universelles aux gouvernements."
+  },
+  {
+    "lessonId": 3,
+    "id": 305,
+    "question": "Chaque année, la journée internationale des droits de l'homme se célèbre le :",
+    "options": [
+      "A) 1er janvier",
+      "B) 26 juin",
+      "C) 10 décembre",
+      "D) 25 décembre"
+    ],
+    "correctIndex": 2,
+    "explanation": "Elle commémore directement la date de signature de la DUDH par l'ONU en 1948."
+  },
+  {
+    "lessonId": 4,
+    "id": 401,
+    "question": "Comment appelle-t-on le fait de favoriser abusivement sa famille dans l'attribution de postes ?",
+    "options": [
+      "A) Le favoritisme amical",
+      "B) Le népotisme",
+      "C) Le pot-de-vin direct",
+      "D) Le bénévolat social"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le népotisme désigne la déviation de pouvoir favorisant les membres de sa famille au détriment du mérite."
+  },
+  {
+    "lessonId": 4,
+    "id": 402,
+    "question": "Quelle est la définition claire et simple de la corruption ?",
+    "options": [
+      "A) Travailler de manière dure pour augmenter son propre salaire",
+      "B) Détourner volontairement les yeux face à un meurtre",
+      "C) Utiliser sa position d'autorité publique pour dériver des faveurs ou gains personnels",
+      "D) Offrir des cadeaux licites à des œuvres de bienfaisance"
+    ],
+    "correctIndex": 2,
+    "explanation": "La corruption détourne la fonction d'intérêt général au bénéfice exclusif de l'intérêt privé."
+  },
+  {
+    "lessonId": 4,
+    "id": 403,
+    "question": "Voler de l'argent public alloué par exemple à un chantier d'école est qualifié de :",
+    "options": [
+      "A) Solidarité partagée",
+      "B) Détournement de fonds publics",
+      "C) Népotisme organisationnel",
+      "D) Rallonge budgétaire"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le détournement de fonds consiste à soustraire de l'argent qui appartient à toute la communauté pour son compte personnel."
+  },
+  {
+    "lessonId": 4,
+    "id": 404,
+    "question": "Laquelle des propositions suivantes est une conséquence directe de la corruption ?",
+    "options": [
+      "A) La répartition égale des richesses entre pauvres et riches",
+      "B) Une amélioration flagrante du système de soin hospitalier",
+      "C) Grande injustice sociale, ralentissement économique et perte de confiance des citoyens",
+      "D) Une élection nationale sans tricherie"
+    ],
+    "correctIndex": 2,
+    "explanation": "La corruption affaiblit la confiance démocratique, ruine l'économie et maintient les populations dans la pauvreté."
+  },
+  {
+    "lessonId": 4,
+    "id": 405,
+    "question": "Un pot-de-vin à un agent de police pour éviter une amende de 50 000 FCFA est un exemple de :",
+    "options": [
+      "A) Citoyenneté active d'entraide",
+      "B) Fraude légale amicale",
+      "C) Corruption active et passive réprimée par la loi",
+      "D) Geste d'économie budgétaire"
+    ],
+    "correctIndex": 2,
+    "explanation": "Donner de l'argent personnel à un agent de l'État pour court-circuiter une règle légale constitue un délit de corruption sévèrement puni."
+  },
+  {
+    "lessonId": 5,
+    "id": 501,
+    "question": "Quelle est la différence fondamentale entre sexe et genre ?",
+    "options": [
+      "A) Le genre désigne la biologie, le sexe désigne l'habillement",
+      "B) Le sexe est biologique et fixe à la naissance, tandis que le genre désigne l'ensemble des rôles sociaux attribués par la culture",
+      "C) Les deux notions sont identiques à 100%",
+      "D) La loi réprime le genre mais protège le sexe"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le sexe est ce qui nous définit biologiquement (mâle/femelle), tandis que le genre est une construction sociale évolutive (stéréotypes hommes/femmes)."
+  },
+  {
+    "lessonId": 5,
+    "id": 502,
+    "question": "Refuser d'embaucher une candidate sous prétexte qu'elle va se marier ou avoir des enfants est :",
+    "options": [
+      "A) Une mesure de protection familiale normale",
+      "B) Une discrimination illégale passible de poursuites devant la justice",
+      "C) Un acte de bienfaisance pour soulager son planning",
+      "D) Recommandé par la majorité des lois nationales"
+    ],
+    "correctIndex": 1,
+    "explanation": "La discrimination à l'embauche basée sur le sexe, la grossesse ou la situation de famille est interdite et punie par la loi."
+  },
+  {
+    "lessonId": 5,
+    "id": 503,
+    "question": "Les injures, le harcèlement continu et la dégradation morale relèvent de la violence :",
+    "options": [
+      "A) Violence physique",
+      "B) Violence sexuelle",
+      "C) Violence psychologique et verbale",
+      "D) Violence économique"
+    ],
+    "correctIndex": 2,
+    "explanation": "La violence n'est pas que corporelle ; détruire l'estime d'autrui par des attaques régulières et des propos blessants constitue une violence psychologique majeure."
+  },
+  {
+    "lessonId": 5,
+    "id": 504,
+    "question": "La distinction classique enseignant 'le sexe est à la Nature ce que le genre est...'",
+    "options": [
+      "A) ...aux mathématiques",
+      "B) ...à la physique pure",
+      "C) ...à la Culture (la construction sociale de la société)",
+      "D) ...aux animaux de la jungle"
+    ],
+    "correctIndex": 2,
+    "explanation": "C'est la culture et la tradition de la société (le genre) qui créent les rôles ou clichés associés aux corps biologiques (le sexe)."
+  },
+  {
+    "lessonId": 5,
+    "id": 505,
+    "question": "Que devez-vous faire en premier en tant que lycéen si vous observez une violence récurrente ?",
+    "options": [
+      "A) Filmer et partager sur les réseaux sociaux pour faire le buzz",
+      "B) Ignorer totalement le problème car cela ne vous concerne pas",
+      "C) En parler immédiatement et le signaler à un adulte de confiance (professeur, CPE, famille)",
+      "D) Provoquer une bagarre générale pour donner une leçon aux coupables"
+    ],
+    "correctIndex": 2,
+    "explanation": "S'exprimer et alerter le corps éducatif est l'attitude la plus protectrice et citoyenne possible."
+  },
+  {
+    "lessonId": 6,
+    "id": 601,
+    "question": "La règle d'or du Développement Durable exige de :",
+    "options": [
+      "A) Consommer le plus de pétrole possible tout de suite",
+      "B) Répondre aux besoins du présent sans compromettre la capacité des générations futures à satisfaire les leurs",
+      "C) Bloquer tout développement économique et retourner à l'âge préhistorique",
+      "D) Financer exclusivement des centrales à charbon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Il s'agit d'un équilibre de gestion des ressources terrestres à long terme, pour ne pas laisser une terre ruinée à nos descendants."
+  },
+  {
+    "lessonId": 6,
+    "id": 602,
+    "question": "Quels sont les 3 piliers indissociables indispensables à la stabilité de la pyramide durable ?",
+    "options": [
+      "A) Agriculture, Tourisme, Industrie lourde",
+      "B) L'Économique, le Social (justice, éducation) et l'Environnemental (nature, climat)",
+      "C) Les Impôts, la Justice, la Défense nationale",
+      "D) Le Pétrole, l'Électricité nucléaire, le Charbon"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'économie doit être juste socialement tout en respectant l'environnement naturel. Si un pilier s'effondre, l'ensemble se dégrade."
+  },
+  {
+    "lessonId": 6,
+    "id": 603,
+    "question": "Combien d'Objectifs de Développement Durable (ODD) globaux ont été fixés par l'ONU pour 2030 ?",
+    "options": [
+      "A) 5 objectifs majeurs",
+      "B) 10 objectifs prioritaires",
+      "C) 17 objectifs interconnectés",
+      "D) 50 objectifs nationaux"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'ONU a mis à l'agenda 17 objectifs pour éliminer la faim, la pauvreté, protéger les mers, l'air et assurer une éducation de qualité."
+  },
+  {
+    "lessonId": 6,
+    "id": 604,
+    "question": "Lequel de ces gestes contribue directement et positivement à réduire notre empreinte carbone ?",
+    "options": [
+      "A) Laisser couler le robinet pendant qu'on se brosse les dents",
+      "B) Éteindre les appareils électriques inutiles en quittant une pièce et planter des arbres",
+      "C) Acheter massivement des produits jetables en plastique",
+      "D) Brûler ses ordures ménagères en plein soleil"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le reboisement absorbe le CO2, et la sobriété d'allumage évite le gaspillage électrique inutile."
+  },
+  {
+    "lessonId": 6,
+    "id": 605,
+    "question": "Pourquoi l'action environnementale du développement durable est-elle devenue d'une urgence absolue ?",
+    "options": [
+      "A) Pour faire plaisir aux partis écologistes",
+      "B) Parce que le climat change de façon dangereuse (inondations, incendies) et que les ressources vitales comme l'eau s'épuisent",
+      "C) Parce que cela permet de faire baisser artificiellement le prix de l'essence",
+      "D) Les scientifiques s'accordent de fait à dire que l'environnement se régule seul sans aide"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'épuisement accéléré de l'eau potable, la réduction de la biodiversité et le dérèglement climatique menacent la vie humaine elle-même."
+  },
+  {
+    "lessonId": 7,
+    "id": 701,
+    "question": "Qu'est-ce que le bénévolat citoyen ?",
+    "options": [
+      "A) Un stage obligatoirement rémunéré par la mairie",
+      "B) Une activité commerciale lucrative",
+      "C) Offrir librement et gratuitement de son temps et ses compétences au service d'une cause sans contrepartie financière",
+      "D) Une sanction décidée par un conseil de discipline"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le bénévolat repose sur l'altruisme et la volonté de participer directement à l'amélioration de la vie sociale gratuitement."
+  },
+  {
+    "lessonId": 7,
+    "id": 702,
+    "question": "Laquelle de ces actions est une marque pure et concrète de solidarité sociale ?",
+    "options": [
+      "A) Regarder un match de football entre amis",
+      "B) Faire de la collecte de denrées de nourriture pour les sans-abris ou donner son sang",
+      "C) S'acheter des vêtements de marque de luxe",
+      "D) Rendre ses devoirs à l'heure réglementaire"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le don de sang ou l'aide d'urgence auprès de démunis illustre la protection collective des plus fragiles de notre communauté."
+  },
+  {
+    "lessonId": 7,
+    "id": 703,
+    "question": "La participation citoyenne au niveau local dans une commune se manifeste par :",
+    "options": [
+      "A) Signaler un lampadaire défaillant ou assister à des débats communaux publics",
+      "B) Écrire des histoires drôles sur internet",
+      "C) Augmenter la vitesse de conduite automobile",
+      "D) Bloquer arbitrairement la porte des voisins"
+    ],
+    "correctIndex": 0,
+    "explanation": "S'intéresser aux infrastructures de proximité et faire remonter les incidents à la mairie est un engagement de participation locale fort."
+  },
+  {
+    "lessonId": 7,
+    "id": 704,
+    "question": "La règle mnémotechnique tirée du cours dit: 'Solidarité = le Cœur', tandis que la participation représente :",
+    "options": [
+      "A) 'La tête réfléchie'",
+      "B) 'L'estomac avide'",
+      "C) 'Les Mains actives dans l'action'",
+      "D) 'Les pieds qui fuient en courant'"
+    ],
+    "correctIndex": 2,
+    "explanation": "La solidarité est la bienveillance (le cœur), tandis que la participation est l'engagement physique et matériel (les mains) à l'œuvre."
+  },
+  {
+    "lessonId": 7,
+    "id": 705,
+    "question": "Quelle satisfaction personnelle un jeune tire-t-il du bénévolat ?",
+    "options": [
+      "A) Il gagne des sommes d'argent importantes",
+      "B) Il est dispensé de passer le baccalauréat scolaire",
+      "C) La fierté d'avoir aidé, des sourires authentiques de reconnaissance et une expérience utile",
+      "D) Le droit exclusif de commettre des infractions mineures"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le bénévolat enrichit l'esprit, tisse de vraies relations d'entraide et développe le sentiment d'avoir un impact utile."
+  }
+]

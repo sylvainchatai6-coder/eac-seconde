@@ -1,0 +1,457 @@
+[
+  {
+    "lessonId": 1,
+    "id": 101,
+    "question": "Inona no atao hoe fandraisana andraikitra maha-olom-pirenena (Citoyenneté)?",
+    "options": [
+      "A) Manana karatra filàmana fotsiny na pasipaoro",
+      "B) Maha mpikambana mavitrika ao amin'ny fiaraha-monina ara-politika iray miaraka amin'ny zo sy adidiny",
+      "C) Miaina fotsiny amin'ny firenena iray nefa tsy mandoa hetra mihitsy",
+      "D) Mitadidy ny lalana rehetra ao amin'ny bokin'ny fitsarana sivily"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny maha-olom-pirenena dia ny fitambaran'ny fandraisana anjara mavitrika, ny zo sivily ary ny adidy mifanaraka amin'izany ao anatin'ny fiaraha-monina."
+  },
+  {
+    "lessonId": 1,
+    "id": 102,
+    "question": "Inona no tena fahasamihafana misy eo amin'ny zom-pirenena (Nationalité) sy ny maha-olom-pirenena?",
+    "options": [
+      "A) Ny zom-pirenena dia andoavam-bola, ny maha-olom-pirenena kosa maimaim-poana",
+      "B) Ny zom-pirenena dia fifandraisana ara-dalàna amin'ny Fanjakana, fa ny maha-olom-pirenena kosa dia mitaky fandraisana anjara mavitrika",
+      "C) Tsy misy fahasamihafana mihitsy eo amin'izy roa tonta",
+      "D) Tsy afaka very ny maha-olom-pirenena fa ny zom-pirenena kosa ho azy rehefa feno 18 taona"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny zom-pirenena dia ny maha ianao anao ara-dalàna hatramin'ny nahaterahana, fa ny maha-olom-pirenena kosa dia ny fampiharana mavitrika ny zo sy adidy."
+  },
+  {
+    "lessonId": 1,
+    "id": 103,
+    "question": "Inona amin'ireto karazana maha-olom-pirenena ireto no momba ny fandehanana mifidy?",
+    "options": [
+      "A) Maha-olom-pirenena sivily",
+      "B) Maha-olom-pirenena ara-tsosialy",
+      "C) Maha-olom-pirenena ara-politika",
+      "D) Maha-olom-pirenena ara-toekarena"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny zo hifidy sy ny zo ho fidiana dia tafiditra mivantana ao amin'ny maha-olom-pirenena ara-politika."
+  },
+  {
+    "lessonId": 1,
+    "id": 104,
+    "question": "Inona no tanjona lehibe indrindra amin'ny Fanabeazana ho Olom-pirenena (EAC)?",
+    "options": [
+      "A) Mampitadidy fotsiny famaritana maro mba hahafahana manao fanadinana",
+      "B) Manasazy ireo mpianatra ratsy fitondran-tena eny an-dakilasy",
+      "C) Manomana anao ho olon-dehibe tompon'andraikitra, mahafantatra ny tontolo ary mandray andraikitra ho an'ny soa iombonana",
+      "D) Mampianatra anao hihira ny hiram-pirenena fotsiny"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny EAC dia mitaiza ny tanora sady manomana azy ireo hahatakatra ny maha-zava-dehibe ny fanajàna sy ny fandraisana anjara mavitrika eo anivon'ny fiaraha-monina."
+  },
+  {
+    "lessonId": 1,
+    "id": 105,
+    "question": "Ny zazakely vao teraka eto Madagasikara dia manana avy hatrany:",
+    "options": [
+      "A) Ny zom-pirenena malagasy, saingy mbola tsy tompon'andraikitra mavitrika maha-olom-pirenena",
+      "B) Zo hifidy sy ho fidiana amin'ny fifidianana rehetra",
+      "C) Adidy handoa hetra amin'ny fidiram-bolany",
+      "D) Maha-olom-pirenena mavitrika nefa tsy manana zom-pirenena"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ny zaza vao teraka dia manana zom-pirenena (fifandraisana ara-dalàna amin'ny tany) saingy rehefa lehibe vao ho olom-pirenena mavitrika."
+  },
+  {
+    "lessonId": 2,
+    "id": 201,
+    "question": "Inona amin'ireto manaraka ireto no zo fototra an'ny olom-pirenena?",
+    "options": [
+      "A) Zo handeha môtô tsy misy aribasy (casque)",
+      "B) Zo hahazo fanabeazana maimaim-poana sy tsy maintsy idirana",
+      "C) Zo hanaratsy ny olona mandalo eny amin'ny arabe",
+      "D) Zo hitsoaka ny tsy fandoavana ny hetran'ny tanàna"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny fahazoana fanabeazana fototra dia iray amin'ireo zo lehibe indrindra mifehy ny maha-olona sy ny maha-olom-pirenena."
+  },
+  {
+    "lessonId": 2,
+    "id": 202,
+    "question": "Ny fandoavana hetra dia heverina ho toy ny:",
+    "options": [
+      "A) Safidy malalaka ho an'ny mpanan-karena fotsiny",
+      "B) Sazy apetraky ny governemanta",
+      "C) Adidy lehibe ho an'ny olom-pirenena entina mamatsy ny asam-bahoaka (sekoly, lalana, hopitaly)",
+      "D) Fanomezana an-tsitrapo tsy misy valiny"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny hetra dia adidy iombonana mba handatsahana biriky amin'ny fananganana sy fikojakojana ireo fotodrafitrasam-bahoaka."
+  },
+  {
+    "lessonId": 2,
+    "id": 203,
+    "question": "Amin'ny taona firy matetika no misokatra ho an'ny olom-pirenena ny zo hifidy?",
+    "options": [
+      "A) Rehefa feno 14 taona",
+      "B) Rehefa feno 16 taona",
+      "C) Rehefa feno 18 taona",
+      "D) Rehefa feno 21 taona"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rehefa tonga eo amin'ny taona faha-18 ny olona iray dia mahazo ny zom-pirenena feno sy ny zo handray anjara amin'ny fifidianana."
+  },
+  {
+    "lessonId": 2,
+    "id": 204,
+    "question": "Inona no dikan'ny hoe andraikitra an-tsitrapo an-tsoratra (Responsabilité)?",
+    "options": [
+      "A) Manome tsiny foana ny hafa rehefa misy fahadisoana nataonao",
+      "B) Manaiky ny lalàna mafy nefa tsy manome soso-kevitra mihitsy",
+      "C) Fanekena sy fizakana ny vokatry ny zavatra ataonao eo amin'ny lalàna, saina ary fiaraha-monina",
+      "D) Mandray fanapahan-kevitra hisolo ny fitsarana"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny fahafahana mitantana ny fitondran-tenany sy manaiky ny vokatry ny hetsika nataony no fototry ny maha-olona afaka."
+  },
+  {
+    "lessonId": 2,
+    "id": 205,
+    "question": "Mba hitadidiana ireo adidy 5, inona no fehezanteny fohy azo ampiasaina amin'ny teny malagasy?",
+    "options": [
+      "A) V.L.É.T.V.",
+      "B) L.H.F.T.F. (Lalàna, Heta, Fanajàna, Tontolo iainana, Fiarovam-pirenena)",
+      "C) D.U.D.H.",
+      "D) O.N.U."
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny L.H.F.T.F. dia manampy amin'ny fitadidiana eo no ho eo: Lalàna, Heta, Fanajàna, Tontolo iainana, ary Fiarovam-pirenena."
+  },
+  {
+    "lessonId": 3,
+    "id": 301,
+    "question": "Inona ny daty nankatoavana ny Fanambaràna Iraisam-pirenena momba ny Zon'Olombelona (DUDH)?",
+    "options": [
+      "A) Taona 1918, taorian'ny ady lehibe voalohany",
+      "B) Taona 1945, rehefa niforona ny ONU",
+      "C) Ny 10 Desambra 1948",
+      "D) Taona 1989, rehefa nianjera ny manda tany Berlin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nolaniana tamin'ny fomba ofisialy teo anivon'ny fivoriamben'ny Firenena Mikambana ny DUDH ny 10 Desambra 1948."
+  },
+  {
+    "lessonId": 3,
+    "id": 302,
+    "question": "Fikambanana iraisam-pirenena inona no nandrara sy nivoty ity lahatsoratra ity?",
+    "options": [
+      "A) Ny Vondrona Eoropeana (UE)",
+      "B) Ny Firenena Mikambana (ONU)",
+      "C) Ny Vondrona Afrikanina (UA)",
+      "D) L'UNICEF"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny Firenena Mikambana (ONU) no namolavola ity fifanarahana lehibe ity mba hiantohana ny fandriampahalemana eran-tany."
+  },
+  {
+    "lessonId": 3,
+    "id": 303,
+    "question": "Ny Andininy faha-11 amin'ny DUDH dia mametraka fitsipika lehibe eo amin'ny fitsarana:",
+    "options": [
+      "A) Zo hahazo asa mendrika",
+      "B) Fahafahana mikambana an-tsitrapo",
+      "C) Ny fiheverana ho tsy manan-tsiny (tsy manan-tsiny raha tsy misy didim-pitsarana marina manameloka)",
+      "D) Zo hahazo fitsaboana maimaim-poana"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny fiheverana ho tsy manan-tsiny dia miaro ny olona tsirairay amin'ny fanamelohana jadona nefa tsy misy porofo mivaingana."
+  },
+  {
+    "lessonId": 3,
+    "id": 304,
+    "question": "Zava-nitranga lehibe inona teo amin'ny tantara no niteraka mivantana ny fahaterahan'ny DUDH?",
+    "options": [
+      "A) Revolisiona frantsay tamin'ny 1789",
+      "B) Fanjakazakana nisy taty Afrika",
+      "C) Ny habibiana sy ny maty an-tapitrisany nandritra ny Ady Lehibe Faharoa (1939-1945)",
+      "D) Horohorontany mahery vaika eran-tany"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny fangirifiriana sy fahavoazana vokatry ny Ady Lehibe Faharoa no nanosika ny mpitarika eran-tany hamorona fitsipika hiarovana ny zon'olombelona rehetra."
+  },
+  {
+    "lessonId": 3,
+    "id": 305,
+    "question": "Ankalazaina isan-taona ny andron'ny zon'olombelona ny:",
+    "options": [
+      "A) 1 Janoary",
+      "B) 26 Jona",
+      "C) 10 Desambra",
+      "D) 25 Desambra"
+    ],
+    "correctIndex": 2,
+    "explanation": "Izany dia fahatsiarovana ny andro nankatoavana ny DUDH tamin'ny 10 Desambra 1948."
+  },
+  {
+    "lessonId": 4,
+    "id": 401,
+    "question": "Inona no iantsoana ny fanomezana tombon-tsoa tsy ara-driny ho an'ny fianakaviana amin'ny fitadiavana asa na toerana?",
+    "options": [
+      "A) Fanavakavahana namana",
+      "B) Népotisme (Fankasitrahana havana)",
+      "C) Pot-de-vin mivantana",
+      "D) Asa soa ho an'ny fiaraha-monina"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny népotisme dia fandikana lalàna amin'ny fampiasana fahefana mba hanomezana asa na tombontsoa ny akaiky indrindra nefa tsy amin'ny alalan'ny fahaizana."
+  },
+  {
+    "lessonId": 4,
+    "id": 402,
+    "question": "Inona no famaritana tsotra sy mazava ny kolikoly?",
+    "options": [
+      "A) Miasa mafy mba hampitomboana ny karama isam-bolana",
+      "B) Manampi-maso mandritra ny loza nitranga",
+      "C) Fampiasana ny fahefam-panjakana ho tombontsoa manokana",
+      "D) Manolotra fanomezana ara-dalàna ho an'ny fiantrana"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny kolikoly dia manodina ny tanjon'ny soa iombonana ho any amin'ny fatran'ny tombontsoa manokana fotsiny."
+  },
+  {
+    "lessonId": 4,
+    "id": 403,
+    "question": "Ny fangalarana ny volam-bahoaka natokana ho an'ny fotodrafitrasa (ohatra, fananganana sekoly) dia:",
+    "options": [
+      "A) Firaisankina ifampizarana",
+      "B) Détournement de fonds (Fanalàna volam-bahoaka)",
+      "C) Népotisme ara-pandaminana",
+      "D) Fanampiana ara-bola"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny détournement de fonds dia ny fandraisana ho an'ny tena manokana ny vola natokana ho an'ny soa iombonana."
+  },
+  {
+    "lessonId": 4,
+    "id": 404,
+    "question": "Inona amin'ireto no voka-dratsy mivantana ateraky ny kolikoly?",
+    "options": [
+      "A) Fitsinjarana mitovy ny harena eo amin'ny vahoaka",
+      "B) Fanatsarana ny rafi-pitsaboana eny amin'ny hopitaly",
+      "C) Tsy rariny eo amin'ny fiaraha-monina, fahasimban'ny toekarena ary fahaverezan'ny fahatokisan'ny olona",
+      "D) Fifidianana tsy misy hosoka na fitaka"
+    ],
+    "correctIndex": 2,
+    "explanation": "Manimba ny fahatokisan'ny vahoaka ny kolikoly, mampitombo ny fahantrana ary manakana ny fampandrosoana ara-toekarena."
+  },
+  {
+    "lessonId": 4,
+    "id": 405,
+    "question": "Ny fanomezana kolikoly ny polisy mba hialana amina lamandy 50 000 FCFA dia ohatra amin'ny:",
+    "options": [
+      "A) Firaisankina mavitrika eo amin'ny fiaraha-monina",
+      "B) Fitsitsiana vola ara-dalàna",
+      "C) Kolikoly mavitrika sy mandika lalàna izay voasazy",
+      "D) Fandrindrana ny fandaniana manokana"
+    ],
+    "correctIndex": 2,
+    "explanation": "Heloka be vava sy voasazin'ny lalana ny fanomezana na fandraisana vola mamohehatra mba tsy hanarahana fitsipika."
+  },
+  {
+    "lessonId": 5,
+    "id": 501,
+    "question": "Inona no fahasamihafana fototra eo amin'ny lahy sy ny vavy amin'ny biolojia (Sexe) sy ny ara-tsosialy (Genre)?",
+    "options": [
+      "A) Ny genre dia momba ny biolojia, ny sexe kosa momba ny fitafiana",
+      "B) Ny sexe dia lafiny biolojika raikitra hatramin'ny nahaterahana, fa ny genre kosa dia ireo andraikitra sy fitondran-tena andrasan'ny fiaraha-monina",
+      "C) Mitovy tanteraka sy tsy misy valaka ireo teny roa ireo",
+      "D) Ny lalàna mandrana ny genre saingy miaro ny sexe"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny sexe dia voafaritry ny zavaboary, fa ny genre kosa dia ny fitambaran'ny stéréotypes sy fitsipika ampianarin'ny fiaraha-monina."
+  },
+  {
+    "lessonId": 5,
+    "id": 502,
+    "question": "Ny fandavana ny hampiditra vehivavy iray hiasa satria fotsiny izy mety hiteraka na hanambady dia:",
+    "options": [
+      "A) Dingana mahazatra miaro ny fandaharam-potoan'ny tokantrano",
+      "B) Fanavakavahana tsy ara-dalàna ary voasazy mafy eo anatrehan'ny fitsarana",
+      "C) Asa fanampiana ho azy mba tsy ho sasatra",
+      "D) Soso-kevitra omen'ny lalàm-panjakana rehetra"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fandikan-dalàna hentitra ny fanavakavahana eo amin'ny tontolon'ny asa mifototra amin'ny maha-vehivavy na fahaterahana."
+  },
+  {
+    "lessonId": 5,
+    "id": 503,
+    "question": "Ny ompa, ny fampitahorana mitohy ary ny famoretana ara-tsaina dia herisetra:",
+    "options": [
+      "A) Herisetra ara-batana",
+      "B) Herisetra ara-pananahana",
+      "C) Herisetra ara-tsaina sy am-bava",
+      "D) Herisetra ara-toekarena"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tsy amin'ny alalan'ny daroka ihany no misy herisetra; ny fanimbana ny hambom-pon'ny olona sy ny famoretana moa dia herisetra ara-tsaina goavana."
+  },
+  {
+    "lessonId": 5,
+    "id": 504,
+    "question": "Ny fampianarana mahazatra nampitahatra hoe: 'Ny Sexe dia eo amin'ny Zavaboary, ary ny Genre kosa dia...'",
+    "options": [
+      "A) ...amin'ny kajy matematika",
+      "B) ...amin'ny fizika nokleary",
+      "C) ...amin'ny Kolontsaina (fitsipiky ny fiaraha-monina)",
+      "D) ...amin'ny bibidia any an'ala"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny kolontsaina sy ny fomban-drazana (genre) no mamolavola ny andraikitra maha lahy na vavy amin'ny vatana biolojika (sexe)."
+  },
+  {
+    "lessonId": 5,
+    "id": 505,
+    "question": "Inona no tokony hataonao voalohany amin'ny maha mpiara-mianatra raha misy herisetra vao hitanao?",
+    "options": [
+      "A) Handray horonantsary ary hizara izany amin'ny tambajotra sosialy",
+      "B) Tsy hiraharaha mihitsy satria tsy anjaranao ny mamaha izany",
+      "C) Hitantara sy hampandre olon-dehibe atokisana (mpampianatra, ray aman-dreny)",
+      "D) Hanomboka ady amin'ny mpanao herisetra mba hanomezana lesona azy"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny fampitandremana ny mpampianatra na tompon'andraikitra no dingana tsara sy mendrika indrindra hiantohana ny fiarovana."
+  },
+  {
+    "lessonId": 6,
+    "id": 601,
+    "question": "Ny fitsipika volamenan'ny Fampandrosoana Maharitra dia:",
+    "options": [
+      "A) Mandany ny loharano rehetra haingana araka izay azo atao",
+      "B) Mamaly ny filan'ny ankehitriny nefa tsy manimba ny fahafahan'ny taranaka handimby hamaly ny filany",
+      "C) Mijanona amin'ny fampandrosoana ara-tsiansa rehetra ary miverina any amin'ny vanim-potoana taloha",
+      "D) Mamatsy vola fotsiny ny toby famokarana arintany"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fitsipika hentitra izany mba hitsitsiana ny loharanon'ny tany ho an'ireo taranaka ho avy handimby antsika."
+  },
+  {
+    "lessonId": 6,
+    "id": 602,
+    "question": "Inona avy ireo andry 3 lehibe tsy afaka misaraka mba hitsangan'ny fampandrosoana maharitra?",
+    "options": [
+      "A) Fambolena, Fizahan-tany, Teknika lehibe",
+      "B) Ny Ara-toekarena, ny Sosialy (rariny, fanabeazana) ary ny Tontolo iainana (natiora, toetrandro)",
+      "C) Hetra, Fitsarana, Fiarovam-pirenena",
+      "D) Solitany, Hery nokleary, Karbônina"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mila toekarena mivoatra nefa mitombina ara-tsosialy sady manaja ny tontolo iainana izay ahitana ny voary rehetra."
+  },
+  {
+    "lessonId": 6,
+    "id": 603,
+    "question": "Tanjona ho an'ny fampandrosoana maharitra firy (ODD) no nofaritana tamin'ny ONU ho an'ny taona 2030?",
+    "options": [
+      "A) 5 tanjona lehibe",
+      "B) 10 tanjona lohalaharana",
+      "C) 17 tanjona mifandray",
+      "D) 50 tanjona nasionaly"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nisafidy tanjona miisa 17 ny ONU entina handresena ny fahantrana, hiarovana ny tany ary hiantohana ny rano madio sy fanabeazana."
+  },
+  {
+    "lessonId": 6,
+    "id": 604,
+    "question": "Inona amin'ireto hetsika ireto no manampy amin'ny fampihenana ny karbônina isan'andro?",
+    "options": [
+      "A) Mamela ny rano mandeha mandritra ny fiborosiana nify",
+      "B) Mamono ny jiro tsy ampiasaina ary mamboly hazo",
+      "C) Mividy entana plastika fanary foana",
+      "D) Mandoro fako maimbo eo an-tokantrano"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny famonoana jiro dia mitsitsy angovo, mampihena ny CO2, ary ny hazo kosa mitroka ny gazy manimba."
+  },
+  {
+    "lessonId": 6,
+    "id": 605,
+    "question": "Nahoana no maika dia maika ny fandraisana andraikitra amin'ny tontolo iainana ankehitriny?",
+    "options": [
+      "A) Mba hampifaliana fotsiny ireo antoko mpiaro ny tontolo iainana",
+      "B) Satria miova amin'ny fomba mampidi-doza ny toetrandro ary mihena ny rano fisotro",
+      "C) Mba hampidinana ny vidin-tsolika eny amin'ny toby famatsiana",
+      "D) Mino ireo mpahay siansa fa mahavita manamboatra ny tenany ny natiora tsy misy fanampiana"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny hain-tany, ny fiakaran'ny maripana ary ny fahalovan'ny toetrandro dia manohintohina ny fahaveloman'ny zanak'olombelona manontolo."
+  },
+  {
+    "lessonId": 7,
+    "id": 701,
+    "question": "Inona no atao hoe asa soa an-tsitrapo (Bénévolat)?",
+    "options": [
+      "A) Fianarana asa tsy maintsy andoavan'ny kaominina karama",
+      "B) Asam-barotra hahazoana tombony betsaka",
+      "C) Fanomezana maimaim-poana ny fotoanao sy ny fahaizanao ho an'ny soa iombonana nefa tsy mitady karama",
+      "D) Sazy avy amin'ny sekoly noho ny fandikan-dalàna"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny benevolat dia mifototra amin'ny fitiavana manampy ny hafa sy ny faniriana fotsiny handray anjara amin'ny asa soa tsy misy tambiny ara-bola."
+  },
+  {
+    "lessonId": 7,
+    "id": 702,
+    "question": "Hetsika inona no tena maneho firaisankina ara-tsosialy mivaingana?",
+    "options": [
+      "A) Mijery lalao mandeha amin'ny fahitalavitra miaraka amin'ny namana",
+      "B) Manangona sakafo ho an'ny sahirana na manome rà ho an'ny hopitaly",
+      "C) Mividy akanjo lafo vidy be",
+      "D) Manolotra ny enti-mody amin'ny ora voatondro"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ny fanomezana rà sy sakafo dia fifanampiana mivantana hanavotana ny ain'ny mpiray tanindrazana sahirana sy marary."
+  },
+  {
+    "lessonId": 7,
+    "id": 703,
+    "question": "Ny fandraisana anjara mavitrika eo amin'ny fokontany na tanàna misy anao dia:",
+    "options": [
+      "A) Mitatitra ny jiro simba na manatrika fivorian'ny fokontany mba hitondra soso-kevitra",
+      "B) Manoratra tantara mampihomehy amin'ny internet",
+      "C) Mampitombo ny hafainganam-pandeha rehefa mitondra fiara",
+      "D) Manidy ny vavahadin'ny namanao mba tsy hivoahany"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ny fijerena sy fitandrovana ny fotodrafitrasa iombonana ary ny fanolorana hevitra amin'ny fivoriam-bahoaka dia fepetra mavitrika ho an'ny tanàna."
+  },
+  {
+    "lessonId": 7,
+    "id": 704,
+    "question": "Ny fitsipika fitadidiana dia: 'Firaisankina = Fo tsara sitrapo', fa ny fandraisana anjara kosa dia:",
+    "options": [
+      "A) 'Ny loha misaintsaina'",
+      "B) 'Ny vavony noana'",
+      "C) 'Ny Tanana roa miasa amin'ny hetsika mivaingana'",
+      "D) 'Ny tongotra mandositra haingana'"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny firaisankina dia ny fahatsapana fangorahana (ny fo), fa ny fandraisana anjara kosa dia ny fanaovana asa mivaingana hamahana ny olana."
+  },
+  {
+    "lessonId": 7,
+    "id": 705,
+    "question": "Fahafaham-po inona no azon'ny tanora iray amin'ny fanaovana asa soa an-tsitrapo?",
+    "options": [
+      "A) Mahazo mpanaraka sy vola be any am-paosiny",
+      "B) Afaka tsimbina amin'ny fanadinana bacc",
+      "C) Rehareha ho nanampy namana, tsiky amin'ny fo ary traikefa tena ilaina",
+      "D) Zo manokana tsy hanaraka ny fitsipiky ny fifamoivoizana"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ny fanaovana asa soa dia manan-karena fanahy, mampitombo fitiavana, sady miteraka fifaliana lehibe tamin'ny fanampiana."
+  }
+]
